@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link
+			rel="icon"
+			type="image/png"
+			sizes="32x32"
+			href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | E-commerce product page</title>
+		<link rel="stylesheet" href="./css/reset.css" />
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<header class="header">
+				<nav class="header__left">
+					<div class="nav__logo-container">
+						<img
+							src="./images/logo.svg"
+							alt="sneakers company logo"
+							class="nav__logo" />
+					</div>
+					<ul class="nav">
+						<li class="nav__item">
+							<a href="#" class="nav__link">Collections</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Men</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Women</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">About</a>
+						</li>
+						<li class="nav__item">
+							<a href="#" class="nav__link">Contact</a>
+						</li>
+					</ul>
+				</nav>
+				<div class="header__right">
+					<div class="header__right-img-container">
+						<div class="cart-container">
+							<div class="cart__img-container">
+								<img
+									src="./images/icon-cart.svg"
+									alt="shopping cart icon"
+									class="header__right-img" />
+								<span class="badge badge--primary total-items">
+									3
+								</span>
+							</div>
+							<div class="cart__box">
+								<div class="cart__body">
+									<h2 class="cart__header">Cart</h2>
+									<div class="divider"></div>
+									<!-- <h2 class="card__body-header">
+										Your Cart is empty.
+									</h2> -->
+									<div class="cart__items-list">
+										<div class="cart__list-item">
+											<div class="cart__list-item__body">
+												<img
+													src="./images/image-product-1-thumbnail.jpg"
+													alt=""
+													class="cart__item-img" />
+												<div class="cart__item-body">
+													<h3
+														class="cart__item-header">
+														fall limited edition
+														sneakers
+													</h3>
+													<span
+														class="cart__item-price">
+														<span>
+															&dollar;125.00 x
+															<span class="total-quantity">3</span>
+														</span>
+														<strong>
+															&dollar;
+															<span
+																class="final-price">
+																375.00
+															</span>
+														</strong>
+													</span>
+												</div>
+												<button class="btn btn--delete">
+													<img
+														src="./images/icon-delete.svg"
+														alt="bin" />
+												</button>
+											</div>
+											<button
+												class="btn btn--lg btn--primary">
+												checkout
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<img
+							src="./images/image-avatar.png"
+							alt="image-avatar"
+							class="header__right-profile-icon" />
+					</div>
+				</div>
+			</header>
+			<main class="main">
+				<section class="main-container">
+					<article class="main__left">
+						<div class="main__image-container">
+							<img
+								src="./images/image-product-1.jpg"
+								alt="Fashionable white sneakers with orange accents"
+								class="main__product-image" />
+							<div class="thumbnail-container">
+								<img
+									src="./images/image-product-1-thumbnail.jpg"
+									alt="thumbnail"
+									data-src="./images/image-product-1.jpg"
+									class="thumbnail thumbnail--active thumbnail--1" />
+								<img
+									src="./images/image-product-2-thumbnail.jpg"
+									alt="thumbnail"
+									data-src="./images/image-product-2.jpg"
+									class="thumbnail thumbnail--2" />
+								<img
+									src="./images/image-product-3-thumbnail.jpg"
+									alt="thumbnail"
+									data-src="./images/image-product-3.jpg"
+									class="thumbnail thumbnail--3" />
+								<img
+									src="./images/image-product-4-thumbnail.jpg"
+									alt="thumbnail"
+									data-src="./images/image-product-4.jpg"
+									class="thumbnail thumbnail--4" />
+							</div>
+						</div>
+					</article>
+					<article class="main__right">
+						<h1 class="main__right-header text-uppercase">
+							Sneaker Company
+						</h1>
+						<h2 class="main__right-subheader">
+							Fall Limited Edition
+							<span>Sneakers</span>
+						</h2>
+						<p class="main__right-text">
+							These low-profile sneakers are your perfect casual
+							wear companion. Featuring a durable rubber outer
+							sole, they'll withstand everything the weather can
+							offer.
+						</p>
+						<p class="main__price">
+							&dollar;125.00
+							<span class="discount">50&percnt;</span>
+						</p>
+						<p class="main__old-price">&dollar;250.00</p>
+						<div class="main__footer">
+							<div class="quantity quantity--selector">
+								<button class="btn btn--minus">&minus;</button>
+								<span class="count">1</span>
+								<button class="btn btn--add">&plus;</button>
+							</div>
+							<button class="btn btn--primary bs--primary">
+								add to cart
+							</button>
+						</div>
+					</article>
+				</section>
+			</main>
+
+			<aside class="lightbox lightbox--hide">
+				<header class="lightbox__header">
+					<button class="btn btn--close">&times;</button>
+				</header>
+				<article class="light__body">
+					<div>
+						<img
+							src="./images/image-product-1.jpg"
+							alt="Fashionable white sneakers with orange accents"
+							class="lightbox__img" />
+						<div class="button-container">
+							<button class="btn btn--prev">&larr;</button>
+							<button class="btn btn--next">&rarr;</button>
+						</div>
+						<div class="lightbox__thumbnail-container">
+							<img
+								src="./images/image-product-1-thumbnail.jpg"
+								alt="thumbnail"
+								data-src="./images/image-product-1.jpg"
+								data-id="1"
+								class="lightbox__thumbnail lightbox__thumbnail--active lightbox__thumbnail--1" />
+							<img
+								src="./images/image-product-2-thumbnail.jpg"
+								alt="thumbnail"
+								data-src="./images/image-product-2.jpg"
+								data-id="2"
+								class="lightbox__thumbnail lightbox__thumbnail--2" />
+							<img
+								src="./images/image-product-3-thumbnail.jpg"
+								alt="thumbnail"
+								data-src="./images/image-product-3.jpg"
+								data-id="3"
+								class="lightbox__thumbnail lightbox__thumbnail--3" />
+							<img
+								src="./images/image-product-4-thumbnail.jpg"
+								alt="thumbnail"
+								data-src="./images/image-product-4.jpg"
+								data-id="4"
+								class="lightbox__thumbnail lightbox__thumbnail--4" />
+						</div>
+					</div>
+				</article>
+			</aside>
+		</div>
+		<div class="bg-black bg-black--hide"></div>
+
+		<script
+			src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"
+			integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug=="
+			crossorigin="anonymous"
+			referrerpolicy="no-referrer"></script>
+		<script src="./javascript/script.js"></script>
+		<script src="./javascript/animation.js"></script>
+	</body>
+</html>
